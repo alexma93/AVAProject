@@ -1,0 +1,223 @@
+<Schema name="Lauree">
+  <Dimension name="Anno accademico">
+    <Hierarchy name="Codice anno" hasAll="true" primaryKey="id anno">
+      <Table name="anno_accademico" schema="AVA"/>
+      <Level name="Codice anno" uniqueMembers="false" column="codice anno" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Id anno" hasAll="true" primaryKey="id anno">
+      <Table name="anno_accademico" schema="AVA"/>
+      <Level name="Id anno" uniqueMembers="false" column="id anno" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Nome anno" hasAll="true" primaryKey="id anno">
+      <Table name="anno_accademico" schema="AVA"/>
+      <Level name="Nome anno" uniqueMembers="false" column="nome anno" type="String">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Corso di studi">
+    <Hierarchy name="Codice ateneo" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Codice ateneo" uniqueMembers="false" column="Codice ateneo" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Codice corso di studi" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Codice corso di studi" uniqueMembers="false" column="codice corso di studi" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Codice dipartimento" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Codice dipartimento" uniqueMembers="false" column="codice dipartimento" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Data fine validità" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Data fine validit&#xe0;" uniqueMembers="false" column="data fine validit&#xe0;" type="Date">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Data inizio validità" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Data inizio validit&#xe0;" uniqueMembers="false" column="data inizio validit&#xe0;" type="Date">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Durata" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Durata" uniqueMembers="false" column="durata" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Id" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Id" uniqueMembers="false" column="id" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Nome CdS" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Nome CdS" uniqueMembers="false" column="nome CdS" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Nome dipartimento" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Nome dipartimento" uniqueMembers="false" column="nome dipartimento" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Tipo CdS" hasAll="true" primaryKey="id">
+      <Table name="corso di studi" schema="AVA"/>
+      <Level name="Tipo CdS" uniqueMembers="false" column="tipo CdS" type="String">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Studente">
+    <Hierarchy name="Anno conseguimento titolo scuola superiore" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Anno conseguimento titolo scuola superiore" uniqueMembers="false" column="anno conseguimento titolo scuola superiore" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Cittadinanza" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Cittadinanza" uniqueMembers="false" column="cittadinanza" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Codice fiscale" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Codice fiscale" uniqueMembers="false" column="codice fiscale" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Comune" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Comune" uniqueMembers="false" column="comune" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Coorte" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Coorte" uniqueMembers="false" column="coorte" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Data di nascita" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Data di nascita" uniqueMembers="false" column="data di nascita" type="Date">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Id" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Id" uniqueMembers="false" column="id" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Istituto scuola media superiore" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Istituto scuola media superiore" uniqueMembers="false" column="istituto scuola media superiore" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Nazione del diploma" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Nazione del diploma" uniqueMembers="false" column="nazione del diploma" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Provincia" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Provincia" uniqueMembers="false" column="provincia" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Regione" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Regione" uniqueMembers="false" column="regione" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Sesso" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Sesso" uniqueMembers="false" column="sesso" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Stato" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Stato" uniqueMembers="false" column="stato" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Titolo di studio" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Titolo di studio" uniqueMembers="false" column="titolo di studio" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Voto scuola media superiore" hasAll="true" primaryKey="id">
+      <Table name="studente" schema="AVA"/>
+      <Level name="Voto scuola media superiore" uniqueMembers="false" column="voto scuola media superiore" type="String">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Dimension name="Tempo">
+    <Hierarchy name="Anno" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Anno" uniqueMembers="false" column="anno" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Date" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Date" uniqueMembers="false" column="date" type="Date">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Fine mese" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Fine mese" uniqueMembers="false" column="fine mese" type="Boolean">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Giorno" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Giorno" uniqueMembers="false" column="giorno" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Giorno della settimana" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Giorno della settimana" uniqueMembers="false" column="giorno della settimana" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Giorno dellanno" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Giorno dellanno" uniqueMembers="false" column="giorno dell&#x27;anno" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Id" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Id" uniqueMembers="false" column="id" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Inizio mese" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Inizio mese" uniqueMembers="false" column="inizio mese" type="Boolean">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Mese" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Mese" uniqueMembers="false" column="mese" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Mese dellanno" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Mese dellanno" uniqueMembers="false" column="mese dell&#x27;anno" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Nome del mese" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Nome del mese" uniqueMembers="false" column="nome del mese" type="String">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Settimana del calendario" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Settimana del calendario" uniqueMembers="false" column="settimana del calendario" type="Numeric">
+      </Level>
+    </Hierarchy>
+    <Hierarchy name="Weekend" hasAll="true" primaryKey="id">
+      <Table name="tempo" schema="AVA"/>
+      <Level name="Weekend" uniqueMembers="false" column="weekend" type="Boolean">
+      </Level>
+    </Hierarchy>
+  </Dimension>
+  <Cube name="Lauree">
+    <Table name="lauree" schema="AVA"/>
+    <DimensionUsage name="Anno accademico" source="Anno accademico" foreignKey="anno accademico"/>
+    <DimensionUsage name="Corso di studi" source="Corso di studi" foreignKey="corso di studi"/>
+    <DimensionUsage name="Studente" source="Studente" foreignKey="studente"/>
+    <DimensionUsage name="Tempo" source="Tempo" foreignKey="tempo"/>
+    <Measure name="Voto laurea" column="voto laurea" aggregator="count" formatString="&#x23;"/>
+  </Cube>
+</Schema>
